@@ -15,8 +15,11 @@ for times in range(1000):
     y = randint(-400,400)
     s = randint(4,10)
     bob.color("lime green")
+    bob.begin_fill()
+    bob.color("red")
     move(bob,x,y)
     polygon(bob,10,13)
+    bob.end_fill()
 
 
 for times in range(73):
@@ -26,6 +29,8 @@ for times in range(73):
     bob.right(5)
     polygon(bob,400,4)
     bob.width("8")
+
+
     
 for times in range(181):
     bob.color(255,255,255)
